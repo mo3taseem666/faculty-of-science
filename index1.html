@@ -1,0 +1,983 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1256">
+<meta http-equiv="Content-Language" content="ar-eg">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+<head id="Head1"><meta http-equiv="Content-Type" content="text/html;charset =utf-8" /><meta http-equiv="Content-Type" content="text/html; charset=windows-1256" /><title>
+	تسجيل المقررات والجداول الدراسية
+</title><meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1" /><meta name="CODE_LANGUAGE" content="C#" /><meta name="vs_defaultClientScript" content="JavaScript" /><meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" /><link rel="stylesheet" type="text/css" href="http://sareg.sci.cu.edu.eg/style.css" /><meta http-equiv="Content-Language" content="ar-eg" /><meta name="GENERATOR" content="Microsoft FrontPage 6.0" /><meta name="ProgId" content="FrontPage.Editor.Document" />
+    <style type="text/css">
+        #marqueecontainer
+        {
+            position: relative;
+            width: 400px; /*marquee width */
+            height: 450px; /*marquee height */
+            background-color: font-color:#4A186E;
+            overflow: hidden;
+            border: 3pxsolidE5B29E;
+            padding-left: 1px;
+            padding-right: 3px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+    </style>
+</head>
+<body bgcolor="#F9E7DD">
+    <form method="post" action="./welcome.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form2" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form2'];
+if (!theForm) {
+    theForm = document.form2;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=JK33LFAp5VzR6jsjXWXJJq----DGz575OjMgfoozo-ifzfF9qkzFOKhIs6dfIjWpIxz6Lr75OKYxnEO-8JvC9c3VFtOjooyG6_qBExRBndA1&amp;t=637100574060000000" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=Mbjf4zMu-CPUVQbYFlJ4coicXFo223AOqfo54tuU-DCFF6OjTtBwpL1Tpv77FqwkwH7TXqYQDQRpkwLd_QKlUT_z03WH5pLKgFqlNyTls9I1&amp;t=637100574060000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4B9E2203" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="G0J+onLTCQLBjzYjDxE8m2Mw/c1WpXiAvk3MkMC+738atxNHol1lDatCiYnLl9/VDUY27uBkmqwCV3OE74B4Xapjb/TFzsJojsgiNeic7OCCz3FiLa41JwVhsKld+Fz2Z3YZQzceWyaNW1E7bBzGe8frMNwCl/joV7KkFEaSQp/0YbDbDftFPnxdmJ0ZssUU5WBAHOZu8MoTlXCJ40lWLos2fnLHEQBb60g/yV7kbgMTfyE21HHIc8ktI6sLmtl8d1S4cXfaVdDBdJgK7fRcALwGNiOsn+G3To4KmpiujyHNb9gDmJQbFbhBtPdr+VrEPIySa+Jq00UY+sED9jkXfStuUc8qS7kJP/LI4V4QvSVI5EDDLbwE8SK242naYgm1" />
+</div>
+    <div align="center">
+        <center>
+            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse"
+                bordercolor="#111111" width="99%" id="AutoNumber1" height="41">
+                <tr>
+                    <td height="105" align="center" width="860" style="background-color: #ffcccc">
+                        <img border="0" src="final22_23_2.gif" width="950"
+                            height="102">
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <div align="center">
+        <center>
+            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse"
+                bordercolor="#111111" width="99%" id="AutoNumber2" bgcolor="EDCEC2">
+                <tr>
+                    <td>
+                        <div align="center">
+                            <center>
+                                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse"
+                                    bordercolor="#111111" width="99%" id="AutoNumber5" bgcolor="F9E7DD">
+                                    <tr>
+                                        <td width="888" valign="top">
+                                            <p>
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td style="width: 20%" valign="top">
+                                                            <div align="center">
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FAEDE7">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <!--
+                                                                            <img src="http://sareg.sci.cu.edu.eg/images/members_login.jpg" width="262" height="23">
+																			-->
+                                                                        </td>
+                                                                    </tr>
+                                                                    <!--form id="form1" action="login.aspx" target="mainframe"-->
+                                                                    <tr>
+                                                                        <td background="images/left_bg2.jpg" style="height: 268px" valign="top">
+                                                                            <div align="center">
+                                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FAEDE7">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <img src="http://sareg.sci.cu.edu.eg/images/members_login.jpg" width="262" height="23">
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <!--form id="form1" action="login.aspx" target="mainframe"-->
+                                                                                    <tr>
+                                                                                        <td background="http://sareg.sci.cu.edu.eg/images/left_bg2.jpg" style="height: 268px"
+                                                                                            valign="top">
+                                                                                            <div align="center">
+                                                                                                <table width="90%" border="0" cellpadding="0" cellspacing="0" bgcolor="#D3D1D2">
+                                                                                                    <tr>
+                                                                                                        <td bgcolor="#333333" width="75%" align="center">
+                                                                                                            <font color="#FFFFFF"><b>تسجيل الدخول Account Login</b></font>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td width="100%" align="center">
+                                                                                                            <span lang="AR-EG" dir="rtl">
+                                                                                                                <img id="Image1" align="center" src="/students_Photos/2127265.jpg" align="middle" style="height:130px;width:100px;" />
+                                                                                                                <br />
+                                                                                                                <a href="welcome.aspx#photo">تغيير</a>
+                                                                                                            </span>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td width="100%">
+                                                                                                            <div align="center">
+                                                                                                                &nbsp;&nbsp;&nbsp;<br />
+                                                                                                                &nbsp;&nbsp;&nbsp;</div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr height="5">
+                                                                                                        <td width="60%">
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td width="100%">
+                                                                                                            <div align="center">
+                                                                                                                <b></b>&nbsp;&nbsp;&nbsp;
+                                                                                                                <br />
+                                                                                                                &nbsp;&nbsp;&nbsp;
+                                                                                                                &nbsp;</div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td style="text-align: center" width="100%">
+                                                                                                            &nbsp;&nbsp;&nbsp;
+                                                                                                            <br />
+                                                                                                            
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr height="5">
+                                                                                                        <td width="60%" style="text-align: center">
+                                                                                                            &nbsp;&nbsp;&nbsp;<br />
+                                                                                                            &nbsp;&nbsp;&nbsp;
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr height="5">
+                                                                                                        <td width="60%" style="text-align: center">
+                                                                                                            <strong><span style="color: #ff0066">&nbsp;&nbsp;&nbsp;<div dir=rtl align=right><font color=green><br>مرحبا بك: <hr>المعتصم بالله شعبان جمال عبدالدايم<br>[ 2127452 ] <hr><br> </font></div></span></strong>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td width="60%" style="height: 42px">
+                                                                                                            <div align="center">
+                                                                                                                <b><span lang="ar-eg"><font color="#FF9900" size="1">
+                                                                                                                    <input type="submit" name="ctl00$LogIn" value="خروج" id="LogIn" style="font-size:Medium;font-weight:bold;height:38px;width:76px;" /></font></span></b>&nbsp;</div>
+                                                                                                            
+                                                                                                            
+                                                                                                            
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </div>
+                                                                                            <!--
+                                                                                            <img src="http://sareg.sci.cu.edu.eg/images/left_2.jpg" width="262" height="18">
+																							-->
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                            <img src="http://sareg.sci.cu.edu.eg/images/left_2.jpg" width="262" height="18">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <hr />
+                                                                <strong>
+                                                                    <table border="1" width="90%">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td bgcolor="#800000">
+                                                                                            <font color="#FFFFFF"><b>إعلانات وروابط تهمك </b></font>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="right">
+                                                                                            <font size="2">
+                                                                                                <ul>
+                                                                                                    <li><a href="/StudCodeInform.aspx">الإستعلام عن كود الطلاب الجدد داخل الك </a>
+                                                                                                        <br />
+                                                                                                        
+                                                                                                    </li>
+                                                                                                    <li><a target="_blank" href="http://portal.sci-cu.com/">موقع الكلية</a> </li>
+                                                                                                    <li><a href="http://portal.sci-cu.com/specializedprograms/" target="_blank">ما
+                                                                                                        يهم طلاب البرامج المتخصصة</a> </li>
+                                                                                                    <li><a href="http://portal.sci-cu.com/%d8%a7%d9%84%d8%b7%d9%84%d8%a7%d8%a8-%d8%a7%d9%84%d9%88%d8%a7%d9%81%d8%af%d9%8a%d9%86/"
+                                                                                                        target="_blank">للطلاب الوافدين, For F oreigners Students</a> </li>
+                                                                                                    <li><a href="http://coord.sci.cu.edu.eg/">موقع تنسيق التخصصات العلمية</a> </li>
+                                                                                                    <li><a href="https://mycuid.cu.edu.eg" target="_blank" title="موقع الإستعلام عن الكود الجامعي للطالب - Cairo University Student ID inquery website">
+                                                                                                        الرقم الجامعي My CU. ID</a> </li>
+                                                                                                    <li><a href="http://portal.sci.cu.edu.eg/"><strong>موقع الكلية</strong></a> </li>
+                                                                                                </ul>
+                                                                                            </font>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="right">
+                                                                                            <!-- 
+                                                                                            <hr />
+                                                                                            <img src="/HomePageAdverticements/292.jpg" width="200" title="" />  
+                                                                                                                                                                                                                                                         
+                                                                                     <hr/>                                                                                                                                                                  
+                                                                                        
+                                                                                        -->
+                                                                                            
+                                                                                            <!--
+                                                                                         <img src="/Downloads\2017\adv2017-56.jpg" width="200"   title="" />
+                                                                                      	-->
+                                                                                            <hr />
+                                                                                            <a target="_blank" href="/HomePageAdverticements/877.jpg" title="تهنئية د. مها الخازيندار" />
+                                                                                            <img src="/HomePageAdverticements/877.jpg" width="100%" title="تهنئية د. مها الخازيندار" />
+                                                                                            </a>
+                                                                                            <hr />
+                                                                                            <a target="_blank" href="/StudCodeInform.aspx" title=" خدمة الإستعلام عن كود الطالب باستخدام رقم جلوس شهادة الثانوية العامة للطلاب الجدد " />
+                                                                                            <img src="/HomePageAdverticements/837.jpg" width="100%" title=" خدمة الإستعلام عن كود الطالب باستخدام رقم جلوس شهادة الثانوية العامة للطلاب الجدد " />
+                                                                                            </a>
+                                                                                            <hr />
+                                                                                            <a target="_blank" href="/statistics_reports_Files/6_224.pdf" title="خطوات تقديم ملفات الطلاب الجدد والأوراق المطلوبة وموعد تسجيل المقررات الدراسية وإستلام كود الطالب والكود السري لموقع التسجيلة">
+                                                                                                <img src="/Downloads\2023\614.jpg" width="100%" title="خطوات تقديم ملفات الطلاب الجدد والأوراق المطلوبة وموعد تسجيل المقررات الدراسية وإستلام كود الطالب والكود السري لموقع التسجيلة" />
+                                                                                            </a>
+                                                                                            <hr />
+                                                                                            <a target="_blank" href="/statistics_reports_Files/6_429.pdf" title="نموذج استمارة الالتحاق بالكلية">
+                                                                                                <img src="/Downloads\2017\adv2017-40.jpg" width="100%" title="نموذج استمارة الالتحاق بالكلية" />
+                                                                                            </a>
+                                                                                            <hr />
+                                                                                            <a href="">
+                                                                                                <img src="/images/AmnDrAbdo-congrates.jpeg" width="100%" title="" />
+                                                                                            </a>
+                                                                                            <hr />
+                                                                                            
+                                                                                            <br />
+                                                                                            <a href="/Downloads/Nanoscience-and-TechnologyProgram-Final-2023.pdf">
+                                                                                                <img src="/Downloads/Download.jpg" />تحميل دليل الطالب لبرنامج برنامج علوم و تكنولوجيا
+                                                                                                النانو
+                                                                                                <br />
+                                                                                                Nanoscience and Nanotechnology Program (BSc Program)</a>
+                                                                                            <br />
+                                                                                            <a href="/Downloads/Biochemistry-and-Microbiology-Program-Fina-2023.pdf">
+                                                                                                <img src="/Downloads/Download.jpg" />تحميل دليل الطالب لبرنامج برنامج الكيمياء الحيوية
+                                                                                                - الميكروبيولوجي
+                                                                                                <br />
+                                                                                                Biochemistry and Microbiology Program (BSc Program)</a>
+                                                                                            <br />
+                                                                                            <a href="/Downloads/EnvironmetProgram.pdf">
+                                                                                                <img src="/Downloads/Download.jpg" />تحميل دليل الطالب لبرنامج علوم و تكنولوجيا
+                                                                                                البيئة
+                                                                                                <br />
+                                                                                                Environmental Science and Technology (BSc Program)</a>
+                                                                                            <br />
+                                                                                            <a href="/Downloads/MedicalBiophysicsProgram/MedicalBiophysicsProgram-arabic.pdf">
+                                                                                                <img src="/Downloads/Download.jpg" />تحميل دليل الطالب لبرنامج الفيزياء الحيوية
+                                                                                                الطبية 2022-2023 باللغة العربية</a>
+                                                                                            <br />
+                                                                                            <a href="/Downloads/MedicalBiophysicsProgram/MedicalBiophysicsProgram-Eng.pdf">
+                                                                                                <img src="/Downloads/Download.jpg" />
+                                                                                                Download, (English)Medical Biophysics Program, B.Sc. Medical Biophysics, 2022-2023
+                                                                                            </a>
+                                                                                            <br />
+                                                                                            <ul>
+                                                                                               
+                                                                                                <li><a href="/Downloads/Student Guide/Student Guide 2015 2016 for new programs.pdf">
+                                                                                                    دليل الطالب للبرامج الجديدة </a></li>
+                                                                                                <li><a href="/statistics_reports_Files/31_1396.pdf">التعرف عيل برنامج علوم البترول الجيولوجية-
+                                                                                                    كلية العلوم 2023- </a></li>
+                                                                                               
+                                                                                                <li><a href="/Downloads\Student Guide/Student Guide 2015 2016 for new programs.pdf">
+                                                                                                    دليل الطالب للبرامج الجديدة </a></li>
+                                                                                                <li><b><a href="/ChangSpecRequest.aspx">تقديم طلب تغيير المسار </a></b></li>
+                                                                                                <!-- 
+                                                                                                    <li><b><a href="/Downloads/2015/Adv2015.pdf">هام للطلاب المستجدين للعام 2015/2016&nbsp;
+                                                                                                  
+              <li><a href="/Downloads/2015/StudCodes2015.pdf"><b>أ</b></a><b><a href="/Downloads/2015/StudCodes2015.pdf">سماء الطلاب الجدد للعام الجامعى 2016/2015</a></b></li>
+               <li><b><a href="/Downloads/T-Science2015-2016.pdf">بيان بأسماء الطلاب المحولين العام الجامعي 2015 </a></b></li>
+             
+              <li><b><a href="/Downloads/NewStudentsIntroductorySession.jpg" target="_blank">استقبال الطلاب الجدد بمدرج مشرفة-الجزء الثاني</a></b></li>
+                <li><b><a href="/Downloads/NewStudentsIntroductorySession0.jpg" target="_blank">استقبال الطلاب الجدد بمدرج مشرفة-الجزء الأول</a></b></li>
+               <li><b><a href="http://sareg.sci.cu.edu.eg/ExamsTimes.aspx">مواعيد 
+			الإمتحانات المتوقعة </a></b></li>
+			 <li><b><a href="http://sareg.sci.cu.edu.eg/Avialable2RegAppointments.aspx">المقررات
+                                                                                                    والمواعيد المطروحة للتسجيل</a></b> </li>
+                                                                                               
+			 -->
+                                                                                               
+                                                                                                <li><b><a href="/Prerequisits.aspx">&nbsp;بيان بالمتطلب السابق للمقررات- Anding Relation</a></b></li>
+                                                                                                <li><b><a href="/prerequisiteOring.aspx">&nbsp;بيان بالمتطلب السابق للمقررات<br />
+                                                                                                    Oring Relation</a></b></li>
+                                                                                            </ul>
+                                                                                            <hr />
+                                                                                            <ul>
+                                                                                                <li><b><a href="http://sareg.sci.cu.edu.eg/ScienceResults/">موقع نتائج الطلاب الرسمي</a><br>
+                                                                                                </b><font color="#420042" size="1"><span lang="en-us">sareg.sci.cu.edu.eg</span></font>
+                                                                                                </li>
+                                                                                                <li><b><a href="http://sareg.sci.cu.edu.eg/">موقع تسجيل المقررا ت الدراسية</a><br>
+                                                                                                </b><font color="#420042" size="1">sareg.sci.cu.edu.eg</font> </li>
+                                                                                                <li>
+                                                                                                    <p class="MsoNormal" style="margin-top: 0; margin-bottom: 0" align="justify">
+                                                                                                        <b><a href="http://coord.sci.cu.edu.eg/" target="_blank">موقع التنسيق الداخلي للأقسام
+                                                                                                            والتخصصات</a><br>
+                                                                                                        </b><font size="1" color="#420042"><a href="http://coord.sci.cu.edu.eg" target="_blank">
+                                                                                                            coord.sci.cu.edu.eg </a></font>
+                                                                                                </li>
+                                                                                                <li><a href="http://portal.sci.cu.edu.eg/"><strong>موقع الكلية</strong></a> </li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td bgcolor="#800000">
+                                                                                            <font color="#FFFFFF"><b>&nbsp;إعلانات هامة</b></font>
+                                                                                        </td>
+                                                                                        <tr>
+                                                                                            <td align="right">
+                                                                                                <ul>
+                                                                                                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfqPjYScrLJRdKhVoSdxKvAdchHiB40XAQ30qM5qYtARTdHUA/viewform"
+                                                                                                        target="_blank" title="استمارة بيانات خاصة بعدم استلام طالب مرحله البكالوريوس لحسابه على منصه ال Black Board">
+                                                                                                        طلب إستلام حساب ال Black Board طلاب مصريين</a> </li>
+                                                                                                    <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdngROIw-aVMcM9a3x_I6PgZVuRryTw40l5Qt_s4MDSFn2svg/viewform"
+                                                                                                        target="_blank" title="استمارة بيانات خاصة بعدم استلام الطالب الوافد لحسابه على منصه ال Black Board">
+                                                                                                        طلب إستلام حساب ال Black Board طلاب وافدين ( Request to receive the Black Board
+                                                                                                        account for international students) </a></li>
+                                                                                                    <li><a href="https://docs.google.com/forms/d/1sraMr2VFrj1SP_PTdhAK54CBsuiJ8sjlg1s_8Pw5Qks/viewform?edit_requested=true"
+                                                                                                        title="طلب حل مشاكل الطلاب الوافدين فقط (خاص بلجنة الوافدين)Problems of International Students only (les problèmes des étudients Internationaux) This form is constructed for knowing and managing all possible problems facing the students  (Ce formulaire est conçu pour connaître et gérer tous les problèmes possibles auxquels sont confrontés les étudiants)">
+                                                                                                        طلب حل مشاكل الطلاب الوافدين فقط (خاص بلجنة الوافدين) (Problems of International
+                                                                                                        Students only (les problèmes des étudients Internationaux)) </a></li>
+                                                                                                    <!--
+                    <li><a href="/StudCodeInform.aspx">خدمة الإستعلام عن كود
+                        الطالب داخل الكلية باستخدام رقم جلوس شهادة الثانوية العامة للطلاب الجدد
+                       (
+                        The service of inquiring about the student code inside the college using the Secondry School certificate seating number (for new students)
+                        )
+                        </a>
+                       </li>
+                   
+                     
+                      
+                       <li><a href="http://coord.sci.cu.edu.eg/" >موقع تنسيق رغبات التخصصات (Coordination website)</a></li>
+                     <li>
+                      <a href="https://mycuid.cu.edu.eg" target="_blank" title="موقع الإستعلام عن الكود الجامعي للطالب - Cairo University Student ID inquery website">الرقم الجامعي My CU. ID: موقع الإستعلام عن الكود الجامعي للطالب (Cairo University Student ID inquery website)</a>
+                      </li>
+					  -->
+                                                                                                </ul>
+                                                                                                <hr />
+                                                                                                <ul>
+                                                                                                    <li><a href="/statistics_reports_Files/31_869.pdf">نموذج إخلاء طرف طلاب تخصص التقنية
+                                                                                                        الحيوية</a></li>
+                                                                                                    <li><a href="/downloads/DegreesReassignment.docx">استمارة اعادة رصد درجات الطالب (Application
+                                                                                                        form for reassign student marks) </a></li>
+                                                                                                    <li><a href="/downloads/10deDreesRequest.docx">استمارة الحصول على درجات الرأفة للخريجين
+                                                                                                        (Application form for additional marks for graduates) </a></li>
+                                                                                                </ul>
+                                                                                                <hr />
+                                                                                                <ul>
+                                                                                                    <li><a href="Avialable2RegAppointments.aspx">المقررات والمواعيد المطروحة للتسجيل</a>
+                                                                                                    </li>
+                                                                                                    <li><a href="ExamsTimes.aspx"><strong>مواعيد الإمتحانات المتوقعة</strong></a> </li>
+                                                                                                </ul>
+                                                                                                <hr />
+                                                                                                <ul>
+                                                                                                    <li><b><a href="/sendFeedBack.aspx">ارسل شكوي لإدارة الكلية </a></b></li>
+                                                                                                    <li><a href="/Questionnaires/">إستبيانات الطلاب</a> </li>
+                                                                                                </ul>
+                                                                                                
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <!--
+		<b><span lang="ar-eg"><font color="#FF0000">التسجيل&nbsp; مقررات 
+		الفصل الصيفي</font></span></b><p><span lang="ar-eg">
+		<font color="#FF0000">سوف تطرح المقررات بناءا علي الرغبات التي سجلها 
+		الطلاب وطبقا للأعداد التي حددتها الكلية وللخريجين مع العلم بأن قيمة 
+		المصروفات للساعة المعتمدة الواحدة 200 جنيه مصري للساعة المعتمدة وليس 
+		للمقرر - ستعلن باقي نتائج المقررات إبتداء من يوم السبت</font></span></p>
+
+<hr>
+		<p><span lang="ar-eg"><font color="#FF0000">علي طل كالب إكمال البيانات 
+		الأساسية المطلوبة قبل البدئ في التسجيل أو الإطلاع علي النتائج مع مراعاة 
+		العناية والدقة بحيث تملأ البيانات صحيحة</font></span>
+		
+		-->
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <hr />
+                                                                </strong>
+                                                                
+                                                            </div>
+                                                        </td>
+                                                        <td style="width: 80%; background-color: #ffffff;" valign="top">
+                                                            <div dir="rtl" align="center">
+                                                                <h2 style="font-size: medium">
+                                                                    
+    <table id="table2" cellspacing="1" cellpadding="1" width="100%" border="0">
+        <tr>
+            <td style="height: 37px" bgcolor="#008080">
+                <p align="center">
+                    <strong><font color="#ffffff" size="4">صفحة الطالب</font></strong>
+                    
+                </p>
+            </td>
+        </tr>
+    </table>
+    <div dir="rtl" align="right">
+        <font color=green><b>اسم الطالب&nbsp;: </b></font>المعتصم بالله شعبان جمال عبدالدايم<font color=green><b>&nbsp;&nbsp;-&nbsp;&nbsp;رقم الطالب: </b></font>2127452<br><font color=green><b>التخصص:  </b></font><font color=black> [ علوم حاسب منفرد ] </font><font color=green><b>&nbsp;&nbsp;-&nbsp;  المعدل التراكمي:  </b></font><font color=black> [ 2.511 ] <b> - <font color=green>اجتاز: </font><font color=black> [ 80 ] </font><font color=green> ساعة <font color=red> بدون </font>المتطلبات</font></b><b> - <font color=green>اجتاز: </font><font color=black> [ 88 ] </font><font color=green> ساعة بالمتطلبات</font></b><b> - <font color=green>المستوي: </font><font color=black> [  المستوي الثالث  ] </font><font color=green> </font></b><b> - <font color=green>سجل  : </font><font color=black> [ 19 ] </font><font color=green> ساعة</font></b>
+    </div>
+
+                                                                </h2>
+                                                            </div>
+                                                            <div dir="rtl" align="right">
+                                                                
+
+<b><font size="3" color="#800000">
+<a target="_blank" href="https://chat.whatsapp.com/EpXSJmZF1bdJnWDwpmhTzY">إنضم إلي جروب واتس طلاب البرامج المتخصصة بالكلية</a> https://chat.whatsapp.com/EpXSJmZF1bdJnWDwpmhTzY
+</font></b>
+ <blockquote style="border: 5px dashed #800000; padding-left: 4px; padding-right: 4px;
+                        padding-top: 1px; padding-bottom: 1px">
+ <p  align="center"><b><font size="5" color="#800000"><span style="background-color: #FFFF00">
+
+
+<div align="center">
+
+
+ 
+    <div>
+	<table cellspacing="0" cellpadding="3" rules="cols" id="ContentPlaceHolder2_GridViewGuides" style="color:Black;background-color:White;border-color:#999999;border-width:1px;border-style:Solid;font-size:Medium;font-weight:bold;border-collapse:collapse;">
+		<tr style="color:White;background-color:Black;font-weight:bold;">
+			<th scope="col">كود دفع فوري الخاص بك لدفع المصروفات</th>
+		</tr><tr>
+			<td>10812021100265</td>
+		</tr>
+	</table>
+</div>
+    <font size="2">
+إذا كان الكود خطأ يمكن أن تستعلم عن كود الدفع من خلال الموقع  
+<a href="https://mycuid.cu.edu.eg/" target="_blank">https://mycuid.cu.edu.eg/</a> ويمكنك تعديل كود الطالب في صفحتك من <a href="/SendBasicInfos.aspx">هنا</a>
+</font>
+<hr />
+  <div>
+	<table cellspacing="0" cellpadding="3" rules="cols" id="ContentPlaceHolder2_GridView8" style="color:Black;background-color:White;border-color:#999999;border-width:1px;border-style:Solid;font-size:Medium;font-weight:bold;border-collapse:collapse;">
+		<tr style="color:White;background-color:Black;font-weight:bold;">
+			<th scope="col">منسق الإرشاد الأكاديمي</th><th scope="col">القسم العلمي التابع له المرشد</th><th scope="col">رقم الواتس آب</th><th scope="col">الإيميل</th>
+		</tr><tr>
+			<td>أ.د. لبني محمد  صلاح</td><td>قسم الفيزياء</td><td>01222714317</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+    
+
+    
+    <div>
+	<table cellspacing="0" cellpadding="3" rules="cols" id="ContentPlaceHolder2_GridView9" style="color:Black;background-color:White;border-color:#999999;border-width:1px;border-style:Solid;font-size:Medium;font-weight:bold;border-collapse:collapse;">
+		<tr style="color:White;background-color:Black;font-weight:bold;">
+			<th scope="col">بيانات المرشد الأكاديمي المشرف علي الطالب</th><th scope="col">رقم الواتس آب</th><th scope="col">الإيميل</th>
+		</tr><tr>
+			<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+     
+   
+<p><b><font size="4"><span style="background-color: #FFFFCC">
+عزيزي الطالب: يرجي العلم بأن التواصل مع السادة المنسقين والمرشد الأكاديمي يكون في أوقات العمل الرسمية من خلال وسائل التواصل المحدد لك فقط.
+<br/>
+في حالة تعذر 
+التواصل مع المنسق الإرشاد الأكاديمي بالقسم والمرشد الخاص بك برجاء التواصل - في أوقات العمل الرسمية - مع 
+الدكتور ملاك ميخائيل المنسق العام للإرشاد الأكاديمي بالكلية موبايل: 01278787191 بقسم 
+الرياضيات</span></font></b></p>
+</div>
+     
+    <br />
+    
+    
+    <br />
+    
+    <table border="0" cellpadding="0" style="border-collapse: collapse" bordercolor="#111111"
+        width="97%" id="table1" align="center">
+        <tr>
+            <td width="100%">
+                <span style="background-color: #ffffcc"><span style="font-size: 14pt; color: #ff0066">
+                    <div>
+
+</div>
+                    
+                    
+                    <div>
+
+</div>
+                    <div>
+
+</div>
+                    <div>
+
+</div>
+                    
+                    
+                    
+                    
+                    
+                </span></span><span lang="ar-eg" style="font-size: 12pt">
+                    <hr style="text-decoration: underline" />
+                    <br />
+                </span></span>
+                <br />
+               
+               <p  style="text-align: right">
+                <ul>
+                <li>
+                <font size="4"><strong>
+                 <a href="/StudentIdCard/">بطاقة/كارنيه الطالب الجامعية</a>
+                          </strong>    </font>
+                          </li>
+               
+              <li>
+                <font size="4"><strong>
+                 <a href="/top10s.aspx">العشرين الأوائل في كل تخصص - حسب نتائج ومعدلات آخر فصل
+                            دراسي</a>
+                          </strong>    </font>
+                          </li>
+                <li>
+               <font size="4"><strong>
+               <a href="AddAndRemove.aspx">تقديم طلب حذف أو إضافة أو كلاهما معا(
+              <font color="red">  مغلق الآن</font>
+               )</a>
+                                    <br />
+                                   
+                                   </strong>    </font>
+                                   
+                                </li>
+                                
+                                 <li>
+                                 <font size="4"><strong>
+                                 <a href="/Downloads/SubRegRequest_3rd_2021-2022.pdf">
+                                    <img src="/Downloads/Download.jpg" />
+                                    تحميل إستمارة نموذج طلب طرح مقررات للفصل الدراسي الآخر
+                                   
+                                    <img src="/Downloads/Download.jpg" />
+                                    Download, Request Form for Offering Courses for the Semester </a>
+                                </strong>    </font>
+                                    </li>
+                                    
+                <li>
+                <font size="4"><strong>
+                <a href="/RequestToSolveRegProblem/">طلب لحل مشكلة في التسجيل (Request to solve a problem
+                                        in the registration) - عرض نتائح الطلب - Click to show results </a>
+                                        </font></strong>
+                </li>
+                <li>
+                 <font size="4"><strong>
+<b><a href="/RequestToRegisteDesireDCourses/">طلب تسجيل رغبات المقررات المراد 
+طرحها من الفصل الدراسي الآخر للفصل الدراسي الحالي<br>
+Request to register requests for courses to be offered from the other semester 
+of the current semester</a></b>
+</strong></font>
+                </li>
+               <li>
+               <font size="4"><strong>
+               <b><a href="/RequestToRegisteDesireDCourses/WillBeGraduatedInNextSemester.aspx">
+   طلب تسجيل رغبات المقررات المراد طرحها من الفصل الدراسي الآخر في الفصل الدراسي الحالي
+    <br />
+    Request to register wishes for courses to be offered from the other semester in the current semester
+    </a></b>
+</strong></font>
+                </li>
+ </li>
+             <li>
+                    <p class="MsoNormal" style="text-align: right">
+                        <font size="4"><strong><a href="AcademicRecord/">السجل الأكاديمي للطالب (لا يعتد به
+                            رسميا - ليس للإستخدام الرسمي)</a> </strong></font>
+                    </p>
+                    </li>
+                    </ul>
+                    
+                    </p>
+                     <div align="center">
+                     
+                    <p class="MsoNormal" style="text-align: center">
+                        <u><span lang="ar-eg" style="font-size: 12pt">
+                            <input type="submit" name="ctl00$ContentPlaceHolder2$ElectronicGuidance" value="الإرشاد الإلكتروني (دليل إختيار الطالب للتخصصات) " onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder2$ElectronicGuidance&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder2_ElectronicGuidance" style="font-weight:bold;" /></span></u>
+                    </p>
+                    <p class="MsoNormal" style="text-align: center">
+                        <input type="submit" name="ctl00$ContentPlaceHolder2$RegMtables" value="إضغط هنا لعرض / طباعة الجدول" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder2$RegMtables&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder2_RegMtables" title="إضغط هنا لعرض / طباعة الجدول" style="font-size:Large;font-weight:bold;" /><!--&nbsp;&nbsp;&nbsp;<strong><a href="PrintRegistrationCard.aspx">بطاقة التسجيل</a></strong>-->
+                        <br />
+                        <font size="2" color="red"><span style="background-color: #FFFF00">ملحوظة هامة: أي تسجيلات
+                            يتم تسجيلها أثناء التسجيل التجريبي يتم حذفها نهائيا مع بداية التسجيل الفعلي </span>
+                        </font>
+                        <p class="MsoNormal" style="text-align: center">
+                            <u><span lang="ar-eg" style="font-size: 14pt"><strong><a href="AddAndRemovePrintForm.aspx">
+                                نتائج / الرد علي الحذف والإضاقة</a>
+                                <br>
+                                <br>
+                                <br>
+                                <button type="submit" name="ctl00$ContentPlaceHolder2$Button2" value="نتائج الفصل الدراسي"  id="ContentPlaceHolder2_Button2" style="font-size:X-Large;font-weight:bold;width:400px;" ><a style="text-decoration: none;" href="index2.html">نتائج الفصل الدراسي</a></button>
+                        </p>
+                        <font size="4"><strong><a href="/statistics_reports_Files/31_1719.pdf">شروط التخصصات
+                            العلمية المطلوبة لكل تخصص - للطلاب المجتازين 32 ساعة معتمدة فأكثر للتخصص</a> </strong>
+                        </font>
+                </div>
+                <blockquote style="border: 3px dashed #808080; padding-left: 4px; padding-right: 4px;
+                    padding-top: 1px; padding-bottom: 1px">
+                    <p dir="rtl">
+                        <span lang="ar-eg"><b><font size="3">
+                            <div dir="rtl" align="right">
+                                عزيزي الطالب: هذة إعلانات وإرشادات وروابط هامة تفيدك
+                            </div>
+                            <ul>
+                                
+                               
+                                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSegMoNyeiOvKleFuzMByRrb1J4_bu9kFnzTb1ka9gKinn5frQ/viewform">
+                                    استبيان الأهداف الإستراتيجية</a> </li>
+                                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeJvYeHMGeJ4d4Sy1N_v_X-u7P0v_xnrPtyvxt3F6mU9cZTOA/viewform">
+                                    استبيان الرؤية والرسالة والغايات</a> </li>
+                                <li><a href="/Questionnaires/Default.aspx">تقديم إستبيانات الطلاب للفصل الدراسي الحالي
+                                    Apply Current Semister Questionnaires</a>
+                        </font>
+                            <br />
+                            </li>
+                            
+                           
+                           
+                            <li><a href="BlackBoardAccessSubjectCodes.aspx">أكواد الدخول علي منصة التعليم الإلكتروني
+                                للمقررات التي تم تسجيلها في الفصل الدراسي الحالي - Access codes on the e-learning
+                                platform for courses that have been registered in the current semester</a> - <font
+                                    size="1" color="green">إذا لم تجد كود الدخول للمقرر الذي سجلته هنا يرجي إرسال كود
+                                    المقرر والمشكلة علي الإيميل - bbsupport@sci.cu.edu.eg
+                                    <br />
+                                    If you do not find the entry code for the course you registered here, please send
+                                    the course code and the problem to the e-mail: bbsupport@sci.cu.edu.eg </font>
+                            </li>
+                            <br />
+                            <!--
+                   <li>
+                  
+                   <a href="/StudentAccounts.aspx">
+                      خدمة الإستعلام عن حساب التعليم الإلكتروني والإيميل الأكاديمي للطالب 
+                      </a>
+                  </li>
+                  -->
+                            <li>
+                                <br />
+                                <strong><span style="color: #996666"></span></strong><span style="font-size: 6pt"><font
+                                    size="3"><a href="#el">حسابات الدخول علي المقررات المرفوعة علي المنصات التعليمية</a>
+                                </font></span><span style="color: #ff0066"></span></li>
+                            </ul>
+                            <!--
+                                    <hr/>
+                                                جميع المقررات التي لها جزء عملي تعتبر نتيجتها الحالية غير -مكتمل-
+                                            لحين الإنتهاء من الإمتحانات العملية
+                                    <blockquote style="border: 5px dashed #800000; padding-left: 4px; padding-right: 4px;
+                                        padding-top: 1px; padding-bottom: 1px">
+                                        <p>
+                                            <font size="4"><b><a href="/SumitExamsApplogy.aspx"><font color="#00000">تقديم الإعتذار
+                                                عن أداء إمتحانات هذا الفصل الدراسي Apologize for taking exams for this semester</font></a>
+                                                <br />
+                                                <br />
+                                                <a href="/ScienceResults/"><font color="00000">نتائج الأبحاث العلمية للمقررات النظرية
+                                                    التي أعتمدت Theoritical Subjects Researches Approved Results</font></a>
+                                                
+                                                </font>
+                                                </blockquote>
+                                                 <a name="el"></a>
+                                            <blockquote style="border: 5px dashed #800000; padding-left: 4px; padding-right: 4px;
+                                        padding-top: 1px; padding-bottom: 1px">
+                                            <font size="4"><a href="http://sci-cu.com" target="_blank"><font color="red">موقع تقديم
+                                                الأبحاث العلمية Researches Submitting Website</font></a> </font>
+                                            </blockquote>
+                                             <blockquote style="border: 5px dashed #800000; padding-left: 4px; padding-right: 4px;
+                                        padding-top: 1px; padding-bottom: 1px">
+                                            الرابط الخاص بالطلاب&nbsp; للدخول علي المقررات الإلكترونية علي موقع الجامعة<br>
+                                </b>
+                    </font><a href="https://cu.edu.eg/ar/materials"><font size="4">
+                        
+                        https://cu.edu.eg/ar/materials</font></a></p>
+                <p>
+                    <font size="5">ثم الدخول علي مقررات كلية العلوم ثم إدخال هذا الكود<br>
+                        <b></b></font>
+                </p>
+                <p>
+                    <font size="5"><b>224043</b></font></p>
+                  
+                <hr />
+                <br /> 
+                 -->
+                            <font size="3"><strong>
+                                <div>
+
+</div>
+                            </strong></font>
+                            <hr />
+                            <div>
+
+</div>
+                            
+                </blockquote>
+                <font size="1" color="#FF0000"><span style="background-color: #FFFF00">
+                    <br />
+                    <!--
+                    سوف يتم الإنهاء من حل معوقات التسجيل مساء اليوم 18-4-2021 ومن لديه أي مشكلة أخري في جدوله عليه تقديم طلب إضافة أو حذف / إضافة في شئون الطلاب
+                    <br /> 
+                    The solution to the registration impediments will be terminated this evening 4/18-2021, and whoever has any other problem in his schedule must submit a request to add or delete / add in student affairs. 
+                    <br /> 
+                    علي كل طالب مراجعة جدوله الدراسي والتأكد من عدم وجود أي تعارض في المواعيد وغير مسموح بأي متعارضات في المواعيد إلا في حالة التعارض في الـ Online بعد الحصول على موافقة مكتوبة من أستاذ المقرر ومعتمدة منه وتسلم مع الجدول في شئون الطلاب.
+                    <br /> 
+                    Each student should review his academic schedule and ensure that there is no conflict in appointments, and any conflicts in appointments are not allowed except in the case of online conflict after obtaining a written approval from the course professor approved by him and received with the schedule in student affairs. 
+-->
+                    <br />
+                    يجب علي الطالب التأكد من سلامة الجدول الدراسي ثم طباعة الجدول وتسليم نسخه موقعة
+                    من الطالب إلي إدارة شئون الطلاب مرفقا بها صورة إيصال دفع المصروفات وإستمارة تسجيل
+                    المقررات
+                    <br />
+                    The student must ensure the integrity of the course schedule, then print the schedule
+                    and hand over a copy signed by the student to the Student Affairs Department attached
+                    to it a copy of the payment receipt and the course registration form </span>
+                </font><font size="3">
+                    <p style="text-align: center">
+                        
+                        <input type="submit" name="ctl00$ContentPlaceHolder2$sendfeedBack" value="إرسال شكوي أو إستفسار" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder2$sendfeedBack&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder2_sendfeedBack" title="عزيزي الطالب لتسهيل التواصل معك بما يستجد من تغييرات وإبلاغك بالمواعيد الهامة مثل مواعيد الإمتحانات وغيرها والتمتع بميزات تكنولوجيا المعلومات بالكلية مثل البريد الإلكتروني للطلاب وغيره من الخدمات برجاء ملئ بيانات الإتصال بك مثل البريد الإلكتروني ورقم التليفون واسمك كامل رباعي بالإنجليزية" style="font-weight:bold;width:300px;" /><br />
+                    </p>
+                    <br />
+                    <p class="MsoNormal" style="text-align: center">
+                        <u><span lang="ar-eg" style="font-size: 14pt"><strong>
+                            <input type="submit" name="ctl00$ContentPlaceHolder2$results" value="نتائج الفصل الدراسي" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder2$results&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder2_results" style="font-size:Large;font-weight:bold;width:300px;" /></strong></span></u>
+                    </p>
+                    <!--
+                       زر الإرشاد الإلكتروني هنا
+                       -->
+                    <p class="MsoNormal" style="text-align: center">
+                        <u><span lang="ar-eg" style="font-size: 12pt">
+                            <input type="submit" name="ctl00$ContentPlaceHolder2$academicRecord" value="عرض وطباعة السجل الأكاديمي" id="ContentPlaceHolder2_academicRecord" disabled="disabled" class="aspNetDisabled" style="font-weight:bold;width:300px;" /></span></u>
+                    </p>
+                    <p class="MsoNormal" style="text-align: center">
+                        <u><span lang="ar-eg" style="font-size: 12pt"><strong>
+                            <input type="submit" name="ctl00$ContentPlaceHolder2$results0" value="نتائج نصف الفصل و اعمال الفصل  او العملى" id="ContentPlaceHolder2_results0" disabled="disabled" class="aspNetDisabled" style="font-weight:bold;width:300px;" /></strong></span>
+                            </u>
+                    </p>
+                    <p style="text-align: center">
+                        <input type="submit" name="ctl00$ContentPlaceHolder2$SendBasicInfos" value="تسجيل البيانات الأساسية للطالب" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder2$SendBasicInfos&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder2_SendBasicInfos" title="عزيزي الطالب لتسهيل التواصل معك بما يستجد من تغييرات وإبلاغك بالمواعيد الهامة مثل مواعيد الإمتحانات وغيرها والتمتع بميزات تكنولوجيا المعلومات بالكلية مثل البريد الإلكتروني للطلاب وغيره من الخدمات برجاء ملئ بيانات الإتصال بك مثل البريد الإلكتروني ورقم التليفون واسمك كامل رباعي بالإنجليزية" style="font-weight:bold;width:300px;" />&nbsp;
+                    </p>
+                    <p style="text-align: center">
+                        <input type="submit" name="ctl00$ContentPlaceHolder2$EditMyAccountPassword" value="تغيير الرقم السري" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder2$EditMyAccountPassword&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder2_EditMyAccountPassword" title="ملحوظة هامة: بعد تغيير كلمة السر سيقوم بإغلاق جلستك ويتم تسجيل الخروج أوتوماتيك وعليك إعادة تسجيل الدخول من جديد - كذلك يجب عليك تسجيل الخروج بنفسك أو لا تترك حسابك مفتوح حتي لا يقم شخص آخر  بتغغير كلمة السر الخاصة بك ويغلق عليك حسابك علي الموقع ويعطلك أو يمنعك من التسجيل أو أنشطة أخري - يجب أخذ الحذر." style="font-weight:bold;width:300px;" />
+                    </p>
+                    <p style="text-align: center">
+                        <input type="submit" name="ctl00$ContentPlaceHolder2$LogOut" value="تسجيل الخروج" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder2$LogOut&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder2_LogOut" title="تسجيل الخروج" style="font-weight:bold;width:300px;" />
+                    </p>
+                    
+                    <p style="text-align: center">
+                        <span lang="ar-eg" style="font-size: 14pt"><span style="color: #CC0000; font-weight: 700;">
+                            
+                        </span></span>
+                    </p>
+                    <p style="text-align: center">
+                        <span lang="AR-EG" dir="rtl"><a name="photo"></a>الصورة المطلوبة هي صورة شخصية مقاس
+                            4x6 ذات خلفية بيضاء
+                            <br />
+                            <img id="ContentPlaceHolder2_Image1" src="/students_Photos/2127265.jpg" style="height:250px;width:200px;" /><br />
+                            <strong>الصورة الشخصية:</strong><input type="file" name="ctl00$ContentPlaceHolder2$FileUpload1" id="ContentPlaceHolder2_FileUpload1" style="background-color:#FFFFC0;" />
+                            <input type="submit" name="ctl00$ContentPlaceHolder2$UploadPhoto" value="حمل الصورة" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder2$UploadPhoto&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder2_UploadPhoto" title="غير مسموح لتحميل الصورة من قبل الطالب - حيث قامت الإدارة بتحميلها" style="background-color:#FF8080;font-weight:bold;" /><span
+                                    style="font-size: 12pt"><strong>(</strong></span><a href="javascript:OpenNewWindow('http://sareg.sci.cu.edu.eg/instructions.htm');"><span
+                                        style="font-size: 12pt"><strong>إرشادات</strong></span></a><span style="font-size: 12pt"><strong>)
+                                            <br />
+                                        </strong></span>
+                            <span id="ContentPlaceHolder2_RegularExpressionValidator3" style="font-size:X-Small;font-weight:bold;visibility:hidden;">يجب أن يكون الملف من نوع صورة *.JPG  بأبعاد 4*6 </span></span>
+                    </p>
+                    <!--
+                   <img src="/statistics_reports_Files/goodStudents.jpg" />   
+                    </strong>
+                </p>
+                <hr />
+                <p>
+                    <strong><font size=3 color=red>تنبيه </font></strong><br/> &nbsp;
+                </p>
+                <span lang="ar-eg" style="font-size: 12pt"><span style="color: #996666">
+                    <hr style="text-decoration: underline; font-weight: bold;" />
+                    <span style="color: #000000">&nbsp;</span><strong><span style="text-decoration: underline">إرشادات:</span><br />
+                        <br />
+                    </strong></span><span style="font-size: 10pt">إضغط الأمر الذي تريده، إذا كنت تريد عرض نتائجك اضغط علي نتائج الفصل
+                    الدراسي وإذا أردت عرض وطباعة السجل الأكاديمي اضغط علي زر عرض وطباعة السجل الأكاديمي
+                    وإذا أردت البدئ في تسجيل المقررات الدراسية اضغط علي زر تسجيل المقررات الدراسية -
+                    &nbsp;يمكنك ارسال استفسار اضغط علي ارسال استفسار. </span>
+                </span>
+                <p>
+                    &nbsp;
+                </p>
+            </td>
+        </tr>
+    </table>
+ 
+             
+               <a href="TransfearSpecRequest.aspx">علي الطلاب الراغبين في التحويل إلي تخصص كيمياء جولوجيا أعلي من المعدل التراكمي 1 تسجيل رغباته من خلال هذا الرابط - يجب تسجيل الدخول أولا GPA>=1 و مجموع درجات مقرري ج101 + ج102 مجموع الدرجات لا يقل عن 129 درجة</a>
+              <br />
+                <a href="/TransfearSpecRequest.aspx">تقديم طلب تغيير المسار(لطلاب المستوي الثاني فقط) </a><br/><br/>
+                                          <a href="TransfearSpecRequest.aspx">علي الطلاب الراغبين في التحويل إلي تخصص فيزياء منفرد أعلي من المعدل التراكمي 1.3 تسجيل رغباته من خلال هذا الرابط - يجب تسجيل الدخول</a>
+                                <br/>  <br/>   
+                                 <a href="/TransfearSpecRequest.aspx">تقديم طلب تغيير المسار(لطلاب المستوي الثاني فقط) </a><br/><br/>
+            
+      <a href="/registerElectiveCourses.aspx">تسجيل رغبات المواد الإختيارية للطلاب الجدد وسنة أولي - يجب تسجيل الدخول أولا</a><br/><br/>
+                  
+        <a href="/SelectedMaterialsInfoEx.aspx#ExTables">عرض جدول الإمتحانات ورقم المقعد مايو 2015 </a><br/><br/>
+                <a href="/Downloads/Exams-Summer-2015.pdf" target="_blank"><font color="red">جدول إمتحانات الفصل الصيفي 2015 - جميع البرامج</font></a><br/> <br />
+                  <a href="/Downloads/sum2015_ev.pdf" target="_blank"><font color="red">جدول محاضرات صيف 2015</font></a><br/>
+             
+                   <a href="/Downloads/FastingHoursTimes.pdf" target="_blank"><font color="red">جدول مواعيد شهر رمضان المبارك - كل عام وأنتم بخير</font></a><br/>
+             -->
+                    
+                    <hr />
+                    <blockquote style="border: 5px dashed #800000; padding-left: 4px; padding-right: 4px;
+                        padding-top: 1px; padding-bottom: 1px">
+                        <p class="MsoNormal" dir="LTR" style="text-align: justify; direction: rtl; unicode-bidi: embed">
+                            <span style="font-size: 16pt"><b>على جميع طلاب المستوي الاول إبتداء من أكواد 18 تسجيل
+                                مقرر التفكير النقدى (ع110) (U110) في الفصل الدراسي الثاني -- وعلي جميع طلاب المستوي
+                                الثاني (الفصل الدراسى الثانى) تسجيل مقرر رياده الاعمال (ع111) (U111) (الفصل الدراسى
+                                الاول) مع العلم بإنه لن يتم تخرج الطالب والحصول على شهادة البكالوريوس الا بعد إجتياز
+                                هذان المقرران . </b></span>
+                            <p class="MsoNormal" style="text-align: justify; unicode-bidi: embed">
+                                <b>All first-level students, starting from codes 18, must register for the Critical
+                                    Thinking course (P110) (U110) in the second semester - and all second-level students
+                                    (second semester) must register for the Entrepreneurship course (P111) (U111) (first
+                                    semester) Knowing that the student will not graduate and obtain a bachelor’s degree
+                                    unless he passes these two courses.</b></p>
+                            </span><span style="font-size: 16.0pt; line-height: 115%; font-family: Arial,sans-serif">
+                                [</span><span style="font-size: 16.0pt; line-height: 115%">the Entrepreneurship Course
+                                    (U111)</span><span style="font-size: 16.0pt; line-height: 115%; font-family: Arial,sans-serif">(</span><span
+                                        lang="AR-EG" dir="RTL" style="font-size: 16.0pt; line-height: 115%; font-family: Arial,sans-serif">ع111</span><span
+                                            style="font-size: 16.0pt; line-height: 115%; font-family: Arial,sans-serif">)]</span><span
+                                                style="font-size: 16.0pt; line-height: 115%"> in the First Semester, taking in consideration
+                                                that any student <u>will not be graduated</u> until passing these two courses<span
+                                                    lang="en-us">.</span></span></b></p>
+                    </blockquote>
+                   
+                    <blockquote style="border: 5px dashed #800000; padding-left: 4px; padding-right: 4px;
+                        padding-top: 1px; padding-bottom: 1px">
+                        
+                </font></span>
+                </p>
+                <p class="MsoNormal" dir="RTL">
+                    <span style="font-size: 12.0pt"><font color="#800000"><span style="background-color: #FFFF00">
+                      
+                            <a href="Avialable2RegAppointments.aspx">عرض المقررات والمواعيد المتاحة للتسجيل (يتم
+                                تحديث المواعيد تباعا)</a>
+                            <br />
+                            <br />
+                            
+                            <br /></strong></span></u> </font></b>
+                </p>
+                <font size="4"><a href="/Questionnaires/Default.aspx">تقديم إستبيانات الطلاب للفصل الدراسي
+                    الحالي Apply Current Semister Questionnaires</a></font>
+                <br />
+                <strong><a href="Avialable2RegAppointments.aspx">عرض جميع المواعيد والمقررات المطروحة
+                    للتسجيل لهذا التخصص</a><br />
+                    <br />
+                </strong><strong><a href="FirstRegCourses.aspx">المواد المطروحة للتسجيل أول مرة - وليس
+                    شرط الرسوب فيها للتسجيل</a></strong>
+                <br />
+                <strong><a href="Avialable2RegAppointments.aspx">عرض المقررات والمواعيد المتاحة للتسجيل</a>
+                    <br />
+                    عزيزي الطالب يجب عليك ملئ هذة التقييمات/الإستبيانات علي الموقع قبل موعد إعلان نتائج
+                    الفصل الدراسي وإلا سوف لا تتمكن من عرض نتيجتك قبل ملئ التقييمات المطلوبة<br />
+                    <br />
+                    <p class="MsoNormal" style="text-align: center">
+                        <span lang="ar-eg" style="font-size: 12pt"></font> </blockquote>
+                            <p>
+                                <h3>
+                                    رسائلي السابقة والرد عليها
+                                </h3>
+                                <div>
+	<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder2_DetailsView2" style="height:50px;width:95%;border-collapse:collapse;">
+
+	</table>
+</div>
+                                
+                            </p>
+                            
+
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </center>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <div align="center">
+        <center>
+            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse"
+                bordercolor="#111111" width="99%" id="AutoNumber4" bgcolor="EDCEC2">
+                <tr>
+                    <td width="950">
+                        <p dir="rtl" align="center">
+                            <b><font size="2" face="Simplified Arabic" color="#000066">جميع الحقوق محفوظة لكلية
+                                العلوم - جامعة القاهرة </font><font color="#000066" size="2"></font><font size="2"
+                                    face="Simplified Arabic" color="#000066"><span lang="ar-sa"></span></font>
+                            </b>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder2_RegularExpressionValidator3"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder2_RegularExpressionValidator3 = document.all ? document.all["ContentPlaceHolder2_RegularExpressionValidator3"] : document.getElementById("ContentPlaceHolder2_RegularExpressionValidator3");
+ContentPlaceHolder2_RegularExpressionValidator3.controltovalidate = "ContentPlaceHolder2_FileUpload1";
+ContentPlaceHolder2_RegularExpressionValidator3.errormessage = "يجب أن يكون الملف من نوع صورة *.JPG  بأبعاد 4*6 ";
+ContentPlaceHolder2_RegularExpressionValidator3.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder2_RegularExpressionValidator3.validationexpression = "^.+\\.(([jـJ][pP][gG]))$";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+</body>
+</html>
